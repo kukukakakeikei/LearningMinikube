@@ -46,6 +46,7 @@ function install_minikube() {
     minikube delete
     # --kubernetes-version=v1.23.8 https://github.com/kubernetes/minikube/issues/14477
     minikube start --kubernetes-version=v1.23.8 --image-mirror-country=cn
+	# minikube start --image-mirror-country=cn --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers --kubernetes-version=v1.26.1 --driver=docker   默认使用virtualbo
     echo "安装minikube完毕..."
 }
 
