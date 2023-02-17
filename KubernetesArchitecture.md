@@ -1,6 +1,6 @@
 # Learning Kubernetes  Architecture
 
-https://devopscube.com/cka-exam-study-guide/
+<https://devopscube.com/cka-exam-study-guide/>
 
 ## Prerequisites
 
@@ -8,13 +8,13 @@ https://devopscube.com/cka-exam-study-guide/
 
    CAP**定理**（也称为 Brewer 定理）指出分布式数据库系统只能保证这三个特性中的两个：一致性、可用性和分区容错性。
 
-   ### 一致性
+### 一致性
 
    如果所有节点同时看到相同的数据，则称系统是一致的。
 
    简单地说，如果我们在一个一致的系统上执行读操作，它应该返回最近一次写操作的值。这意味着，读取应该导致所有节点返回相同的数据，即最近写入的值。
 
-   ### 可用性
+### 可用性
 
    分布式系统中的可用性可确保系统在 100% 的时间内保持运行。无论节点的个体状态如何，每个请求都会得到一个（非错误）响应。
 
@@ -22,7 +22,7 @@ https://devopscube.com/cka-exam-study-guide/
 
    左图说明了一个“不可用”的系统。
 
-   ### 分区容错
+### 分区容错
 
    这种情况表明系统不会失败，无论消息是否在系统中的节点之间被丢弃或延迟。
 
@@ -44,7 +44,7 @@ https://devopscube.com/cka-exam-study-guide/
 
 ## Architecture
 
-https://devopscube.com/kubernetes-architecture-explained/
+<https://devopscube.com/kubernetes-architecture-explained/>
 
 1. **控制平面组件：**了解每个组件的作用，如 API 服务器、etcd、调度程序和控制器管理器。
 
@@ -65,13 +65,11 @@ https://devopscube.com/kubernetes-architecture-explained/
    - etcd使用 gRPC公开键值 API 。此外，gRPC 网关是一个 RESTful 代理，可将所有 HTTP API 调用转换为 gRPC 消息。它使它成为 Kubernetes 的理想数据库。
    - etcd以key-value格式存储/registry目录key下的所有对象。例如，可以在/registry/pods/default/nginx下找到 default 命名空间中名为 Nginx 的 pod 的信息
 
-​	kube-scheduler 
+​ kube-scheduler
 
-​			调度程序的主要任务是识别创建请求并为创建请求选择最佳节点满足要求的pod。
+​   调度程序的主要任务是识别创建请求并为创建请求选择最佳节点满足要求的pod。
 
 ​    Kube Controller Manager
-
-
 
 1. **工作节点组件**：了解 Kube Proxy、Kubelet、Container Runtime
 
@@ -85,9 +83,4 @@ https://devopscube.com/kubernetes-architecture-explained/
 
 ## Understand Kubeconfig File
 
-https://devopscube.com/kubernetes-kubeconfig-file/
-
-
-
-
-
+<https://devopscube.com/kubernetes-kubeconfig-file/>
